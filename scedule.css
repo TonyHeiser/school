@@ -1,0 +1,682 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(font/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url(font/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(font/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Monserrat-Regular";
+  src: url(font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Monserrat-Bold";
+  src: url(font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Monserrat-Medium";
+  src: url(font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url(font/Montserrat-ExtraBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #dfd0ff;
+  font-family: Monserrat-Regular, Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Monserrat-Bold";
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  background-color: #fff;
+  flex-grow: 1;
+  max-width: 999px;
+  min-width: 450px;
+}
+
+.main-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.to-main {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.2s;
+  border-radius: 15px;
+}
+
+.to-main:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px 0px #dfd0ff;
+}
+
+.header-top__logo {
+  display: flex;
+  /* align-items: center; */
+  width: 187px;
+  margin-left: 51px;
+}
+
+.logo-text {
+  font-family: "Monserrat-Bold";
+  margin-top: 34px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.school {
+  opacity: 50%;
+  position: relative;
+  top: -4px;
+  margin-left: 24px;
+}
+
+.header-top__logo img[alt="creators-logo"] {
+  position: relative;
+  left: -38px;
+  top: -5px;
+}
+
+.get-lesson {
+  width: 177px;
+  height: 52px;
+  background-color: #7670ae;
+  color: white;
+  font-family: "Inter-Regular";
+  font-size: 18px;
+  border-radius: 15px;
+  margin-top: 54px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.plus {
+  position: relative;
+  margin: 16px 26px;
+}
+
+.plus__dash1 {
+  background-color: #fff;
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+}
+
+.plus__dash2 {
+  background-color: #fff;
+  width: 16px;
+  height: 3px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  border-radius: 3px;
+}
+
+.get-lesson span {
+  position: absolute;
+  left: 60px;
+}
+
+.times {
+  margin-top: 94px;
+  margin-left: 51px;
+}
+
+.times__time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 41px;
+}
+
+.long-dash {
+  width: 770px;
+  height: 1px;
+  background-color: #b2bec0;
+  margin-right: 35px;
+}
+
+.aside {
+  width: 530px;
+  padding: 18px 12px;
+}
+
+aside > div {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account__info {
+  display: flex;
+  align-items: center;
+  margin-left: 43px;
+  margin-top: 14px;
+  margin-bottom: 15px;
+}
+
+.account__text {
+  margin-left: 26px;
+}
+
+.account__text .bold {
+  font-family: "Monserrat-Bold";
+  display: block;
+}
+
+.expand {
+  margin-right: 47px;
+}
+
+.account {
+  margin-bottom: 13px;
+}
+
+.aside-exit {
+  display: none;
+}
+
+.show--exit {
+  display: block;
+}
+
+.aside-exit__btn {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 51px;
+  margin-bottom: 10px;
+  width: 507px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.aside-exit__btn:hover {
+  background-color: #3c208d;
+  transform: scale(1.01);
+  color: #fff;
+}
+
+.aside-exit__btn:hover .aside-exit__text {
+  color: #fff;
+  opacity: 1;
+}
+
+.aside-exit__img {
+  margin-right: 10px;
+}
+
+/* .aside-exit__img:hover {
+  fill: green;
+} */
+
+.aside-exit__text {
+  font-family: "Monserrat-Medium";
+  font-weight: 500;
+  opacity: 50%;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+/*! CALENDAR  */
+
+.calendar {
+  width: 506px;
+  height: 479px;
+  margin-bottom: 16px;
+}
+
+.calendar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 19px;
+  padding-top: 10px;
+}
+
+.calendar__current-date {
+  font-family: "Montserrat-ExtraBold";
+  font-size: 18px;
+}
+
+.calendar__body {
+  padding: 20px;
+}
+
+.calendar__body ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.calendar__body ul li {
+  width: calc(100% / 7);
+}
+
+.weeks {
+  font-size: 14px;
+  font-family: "Monserrat-Medium";
+}
+
+.days {
+  margin-top: 20px;
+}
+
+.days li {
+  height: 60px;
+  font-family: "Monserrat-Medium";
+  font-size: 20px;
+  cursor: pointer;
+  padding-top: 17px;
+  border-radius: 10px;
+}
+
+.days li:hover {
+  background-color: #eae0ff;
+}
+
+.today {
+  background-color: #af90f0;
+  color: #fff;
+}
+
+li.today:hover {
+  background-color: #ab8fda;
+}
+
+.last-month,
+.next-month {
+  opacity: 50%;
+}
+
+/* ! END CALENDAR */
+
+.notes {
+  height: 324px;
+  padding-top: 26px;
+}
+
+.notes h2 {
+  text-align: center;
+  margin-bottom: 55px;
+  font-size: 18px;
+}
+
+.notes__dash {
+  background: #b2bec0;
+  width: 396px;
+  height: 1px;
+  margin-bottom: 41px;
+  margin-left: 54px;
+  margin-right: 56px;
+}
+
+.card {
+  width: 263px;
+  height: 122px;
+  border-radius: 15px;
+  background-color: #f1ebff;
+  border-left: 9px solid #ab8fda;
+  position: absolute;
+  top: 190px;
+  left: 180px;
+  transition: 0.2s;
+}
+
+.card__button {
+  cursor: pointer;
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  border-left: none;
+  font-family: inherit;
+  color: #3c208d;
+  text-align: left;
+  /* vertical-align: top; */
+  padding: 0 0 0 9px;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.lang {
+  font-family: "Inter-Medium";
+  font-size: 18px;
+}
+
+.card__time {
+  margin-top: 5px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.just-ten {
+  width: 72px;
+  height: 41px;
+  background-color: #ab8fda;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: "Inter-Medium";
+  position: relative;
+  top: -50px;
+  left: 150px;
+}
+
+.just-ten span {
+  position: absolute;
+  top: 24%;
+  left: 35%;
+}
+
+/** Modal */
+
+.modal-lesson {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.modal-lesson__content {
+  width: 701px;
+  height: 404px;
+  background-color: #fff;
+  border-radius: 64px;
+  padding: 50px;
+  margin: 10% 27%;
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0 10px 10px 5px #ccc;
+}
+
+.show__modal-lesson {
+  display: block;
+}
+
+.modal-lesson h1 {
+  text-align: center;
+  font-family: "Monserrat-Bold";
+  color: #1e2028;
+  font-size: 35px;
+}
+
+.modal-lesson__main {
+  margin-top: 51px;
+  margin-left: 81px;
+}
+
+.modal-lesson__time {
+  display: flex;
+  align-items: center;
+  margin-left: -47px;
+}
+
+.modal-lesson__time span {
+  margin-left: 10px;
+  font-family: "Inter-Bold";
+  font-weight: 700;
+  font-size: 20px;
+  color: #ab8fda;
+}
+
+.modal-lesson__teacher {
+  display: block;
+  margin-top: 4px;
+  font-family: "Inter-Medium";
+  font-size: 20px;
+  letter-spacing: 0.1px;
+}
+
+.modal-lesson__kommentar {
+  margin-top: 6px;
+  font-family: "Inter-Medium";
+  display: block;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+}
+
+.modal-lesson__dashes {
+  margin-top: 25px;
+}
+
+.modal-lesson__dash {
+  background-color: #b2bec0;
+  width: 513px;
+  height: 1px;
+  margin-bottom: 41px;
+}
+
+/*  */
+
+.close__modal-form {
+  position: absolute;
+  top: 40px;
+  left: 470px;
+  border: 2px solid #7670ae;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #7670ae;
+  color: #fff;
+  font-family: "Monserrat-Bold";
+  font-size: 16px;
+}
+
+.modal-open {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.show-modal {
+  display: block;
+}
+
+.modal-open__content {
+  width: 677px;
+  height: 299px;
+  background-color: #fff;
+  border-radius: 30px;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 0 10px 10px 0 #ccc;
+  margin: 15% 28%;
+}
+
+.modal-open__title {
+  font-family: "Montserrat-ExtraBold";
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.modal-open__text {
+  margin-left: 30px;
+  margin-right: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.modal-open__btn {
+  margin: 0 auto;
+  display: block;
+  width: 177px;
+  height: 52px;
+  background-color: #7670ae;
+  color: #fff;
+  font-family: "Inter-Bold";
+  font-size: 18px;
+  border-radius: 15px;
+  margin-top: 30px;
+  transition: 0.2s;
+  border: 2px solid #7670ae;
+}
+
+.modal-open__btn:hover {
+  background-color: #fff;
+  color: #7670ae;
+}
+
+/* modal-form */
+
+.modal-form {
+  display: none;
+  position: relative;
+  top: -980px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 3;
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal-form__content {
+  margin: 0 30%;
+  position: fixed;
+  border-radius: 30px;
+  z-index: 10;
+  width: 511px;
+  height: 693px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 10px 10px 0 #ccc;
+}
+
+.modal-form__title {
+  font-family: "Montserrat-ExtraBold";
+  font-size: 24px;
+  text-align: center;
+  padding-top: 56px;
+}
+
+.modal-form__form {
+  margin-top: 15px;
+  margin-left: 81px;
+  margin-right: 80px;
+}
+
+.modal-form__form label,
+input,
+select {
+  display: block;
+}
+
+.modal-form__form label {
+  font-family: "Monserrat-Bold";
+  font-size: 16px;
+}
+
+.modal-form__form input,
+select {
+  margin-top: 4px;
+  font-family: "Monserrat-Medium";
+  font-size: 16px;
+  width: 350px;
+  height: 61px;
+  background-color: #ededed;
+  border-radius: 20px;
+  border: none;
+  padding-left: 24px;
+  appearance: none;
+  outline: none;
+  margin-bottom: 11px;
+}
+
+.subject-select__option {
+}
+
+.submit-btn {
+  display: block;
+  width: 273px;
+  height: 40px;
+  background-color: #7670ae;
+  border-radius: 15px;
+  border: 2px solid #7670ae;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: 42px;
+  font-family: "Montserrat-ExtraBold";
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color: #7670ae;
+}
+
+img.modal-form__icon {
+  position: relative;
+  left: 350px;
+  top: -100px;
+}

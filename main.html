@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Школа программирования и дизайна CREATORS</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <div class="nothing"></div>
+          <div class="header-top__links">
+            <a href="registration.html" class="sing-up">Регистрация</a>
+            <a href="log-in.html" class="log-in">Войти</a>
+          </div>
+        </div>
+        <div class="header-main">
+          <div class="header-main__info">
+            <h1 class="header-main__title">
+              Школа программирования и дизайна CREATORS
+            </h1>
+            <p>
+              Научим программировать и делать привлекательный дизайн. <br />
+              Запишись на пробный урок и попробуй себя уже сегодня! <br />
+              (для записи на урок необходима предварительная регистрация)
+            </p>
+            <a href="#form-data" class="link-to-formdata">Записаться</a>
+          </div>
+          <img
+            src="media/coworking-remote-work-1.gif"
+            alt="header-main__gif"
+            class="header-main__gif"
+            width="703"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="about-grid">
+      <div class="container">
+        <div class="about-grid__container">
+          <div class="about-grid__students">
+            <img src="media/user.svg" alt="students__icon" />
+            <div class="about-grid__text">
+              <h3>40+</h3>
+              <span class="grey-text">Учеников</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="about-grid__any-location">
+            <img src="media/location.svg" alt="any-location__icon" />
+            <h3>
+              С любой точки <br />
+              мира
+            </h3>
+          </div>
+          <div class="divider"></div>
+          <div class="about-grid__discord">
+            <img src="media/Server.svg" alt="discord__icon" />
+            <h3>На платформе Discord</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="container">
+        <div class="offer__container">
+          <img
+            src="media/coworking-male-programmer-writing-program-code-2.gif"
+            alt="male-programmer__icon"
+            class="offer__img"
+          />
+          <div class="offer__info">
+            <h2 class="offer__title">Мы предлагаем удобный формат обучения!</h2>
+            <p class="offer__text grey-text">
+              Вы можете обучаться из любой точки мира онлайн в комфортных для
+              вас условиях.
+            </p>
+            <ul class="offer__list">
+              <li>
+                <img
+                  src="media/bx_bxs-check-circle.svg"
+                  alt="check-circle__icon"
+                />
+                <span class="grey-text">Обучение на платформе Discord</span>
+              </li>
+              <li>
+                <img
+                  src="media/bx_bxs-check-circle.svg"
+                  alt="check-circle__icon"
+                />
+                <span class="grey-text">В удобное время</span>
+              </li>
+              <li>
+                <img
+                  src="media/bx_bxs-check-circle.svg"
+                  alt="check-circle__icon"
+                />
+                <span class="grey-text"
+                  >C любого устройства (планшет/компьютер/ноутбук)</span
+                >
+              </li>
+              <li>
+                <img
+                  src="media/bx_bxs-check-circle.svg"
+                  alt="check-circle__icon"
+                />
+                <span class="grey-text"
+                  >С большим комьюнити со схожими интересами</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form-data" id="form-data">
+      <div class="container">
+        <div class="form-data__container">
+          <div class="form-data__text">
+            <h2 class="form-data__title">
+              Помогите вашему ребенку сделать первый шаг в IT
+            </h2>
+            <p class="grey-text">Оставьте заявку на пробный урок !</p>
+          </div>
+          <div class="form-data__flex">
+            <form action="" method="" class="form-data__form">
+              <label for="first-name">Имя</label>
+              <input
+                type="text"
+                name="first-name"
+                placeholder="Иван"
+                required
+              />
+              <label for="last-name">Фамилия</label>
+              <input
+                type="text"
+                name="last-name"
+                placeholder="Иванов"
+                required
+              />
+              <label for="subject">Дисциплина</label>
+              <select name="subject" id="subject-select" required>
+                <option value="" class="subject-select__option">
+                  Выберите из списка
+                </option>
+                <option value="">FrontEnd</option>
+                <option value="">UX Designer</option>
+                <option value="">C# Backend</option>
+                <option value="">Java Backend</option>
+                <option value="">Data scientist</option>
+              </select>
+              <label for="datetime">Дата и время</label>
+              <input
+                type="text"
+                name="datetime"
+                placeholder="Выберите из списка"
+                required
+              />
+              <label for="phone">Телефон</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+375 *******"
+                required
+              />
+              <button type="submit" class="submit-btn">Записаться</button>
+            </form>
+            <div class="form-data__after-submit">
+              <h2 class="form-data__title">Что после заявки?</h2>
+              <ul class="form-data__list">
+                <li>
+                  <img
+                    src="media/bx_bxs-check-circle.svg"
+                    alt="check-circle__icon"
+                  />
+                  <span class="grey-text"
+                    >Подарим пробный урок по любой из дисциплин!</span
+                  >
+                </li>
+                <li>
+                  <img
+                    src="media/bx_bxs-check-circle.svg"
+                    alt="check-circle__icon"
+                  />
+                  <span class="grey-text"
+                    >Составим индивидуальный план обучения по итогам пробного
+                    урока</span
+                  >
+                </li>
+                <li>
+                  <img
+                    src="media/bx_bxs-check-circle.svg"
+                    alt="check-circle__icon"
+                  /><span class="grey-text"
+                    >Предоставим доступ к серверу на платформе Discord, в том
+                    числе и к чатам с единомышленниками на целый месяц!</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="media/HQ-coworking-young-woman-with-tablet.svg"
+            alt="tablet__icon"
+            class="form-data__img"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="about-discord">
+      <div class="container">
+        <div class="about-discord__container">
+          <h2 class="about-discord__title">О Discord-комьюнити</h2>
+          <div class="about-discord__flex">
+            <div class="about-discord__info">
+              <p class="about-discord__text grey-text">
+                <span class="about-discord__fat">Дискорд</span> — это платформа
+                для общения, которая стала невероятно популярной среди молодёжи
+                благодаря своей универсальности и удобству. Наш образовательный
+                сервер в Дискорде предлагает уникальную среду, где ученики могут
+                взаимодействовать друг с другом и с преподавателями в реальном
+                времени, обсуждая учебные материалы, задавая вопросы и получая
+                мгновенные ответы.
+              </p>
+              <div class="about-discord__q1">
+                <h3 class="about-discord__title-h3">
+                  Как это поможет в учебе?
+                </h3>
+                <ul class="about-discord__list">
+                  <li>
+                    <img
+                      src="media/bx_bxs-check-circle.svg"
+                      alt="check-circle__icon"
+                    />
+                    <span class="grey-text"
+                      >Мы используем игровые элементы и интерактивные задания,
+                      чтобы сделать процесс обучения более захватывающим.
+                    </span>
+                  </li>
+                  <li>
+                    <img
+                      src="media/bx_bxs-check-circle.svg"
+                      alt="check-circle__icon"
+                    />
+                    <span class="grey-text"
+                      >Дети могут работать вместе над проектами, обсуждать
+                      учебные темы и помогать друг другу, что способствует
+                      развитию командной работы и социальных навыков.
+                    </span>
+                  </li>
+                  <li>
+                    <img
+                      src="media/bx_bxs-check-circle.svg"
+                      alt="check-circle__icon"
+                    />
+                    <span class="grey-text"
+                      >В любое время дня и ночи ваш ребёнок может задать вопрос
+                      и получить поддержку, что делает обучение более гибким и
+                      эффективным.
+                    </span>
+                  </li>
+                  <li>
+                    <img
+                      src="media/bx_bxs-check-circle.svg"
+                      alt="check-circle__icon"
+                    />
+                    <span class="grey-text"
+                      >Мы придаём большое значение безопасности и
+                      конфиденциальности нашего сообщества, обеспечивая надёжную
+                      среду для общения и обмена знаниями.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="about-discord__q2">
+                <h3 class="about-discord__title-h3">
+                  Почему стоит присоединиться?
+                </h3>
+                <p class="grey-text">
+                  Присоединяясь к нашему дискорд-комьюнити, ваш ребёнок не
+                  только получит доступ к качественным образовательным ресурсам,
+                  но и станет частью поддерживающего сообщества, где учёба
+                  превращается в увлекательное приключение.
+                </p>
+              </div>
+            </div>
+            <img
+              src="media/HQcoworking-teamwork-of-colleagues-in-the-office.svg"
+              alt="coworking-colleagues__icon"
+              class="about-discord__img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+          <h2 class="footer__title">Наши социальные сети:</h2>
+          <div class="footer__images">
+            <a href="https://discord.com/" target="_blank">
+              <img src="media/Discord-icon.svg" alt="footer__discord-icon" />
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank">
+              <img src="media/Tik-tok-icon.svg" alt="footer__tik-tok-icon" />
+            </a>
+            
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="media/Instagram-icon.svg" alt="footer__instagram-icon" />
+            </a>
+            <a href="https://web.telegram.org/" target="_blank">
+              <img src="media/Telegram-icon.svg" alt="footer__telegram-icon" />
+            </a>
+            
+          </div>
+          <p class="footer__text">©2023 CREATORS</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

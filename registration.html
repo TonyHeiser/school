@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="registration.css">
+  <title>Регистрация</title>
+</head>
+<body>
+  <button class="to-main-btn" onclick="document.location='main.html'">На главную</button>
+  <div class="register">
+    <div class="container">
+      <h1>Регистрация</h1>
+      <form action="registration" method="get" class="registration">
+        <label for="e-mail">Логин</label>
+        <input type="text" class="e-mail" placeholder="e-mail" required id="e-mail">
+        <br>
+        <label for="name">Имя</label>
+        <input type="text" class="name" required placeholder="имя" id="name">
+        <br>
+        <label for="password">Пароль</label>
+        <input type="password" class="password" placeholder="пароль" required id="password">
+        <br>
+        <button class="btn-submit" type="submit" onclick="document.location='./new-user.html'">Зарегистрироваться</button>
+      </form>
+      <p class="already-have">Уже есть аккаунт? <a href="log-in.html">Войти</a></p>
+    </div>
+    <div class="background">
+      <img src="media/log-in-up.png" alt="up-img">
+      <img src="media/log-in-down.png" alt="down-img">
+    </div>
+  </div>
+</body>
+</html>

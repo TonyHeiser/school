@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Monserrat-Bold";
+  src: url(font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Monserrat-Regular";
+  src: url(font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url(font/Rubik-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(font/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Monserrat-ExtraBold";
+  src: url(font/Montserrat-ExtraBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Monserrat-Regular", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #f1ebff;
+  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Monserrat-ExtraBold";
+}
+
+.to-main-btn {
+  margin: 20px 26px;
+  background: transparent;
+  border: 1px solid #6967A4;
+  color: #6967A4;
+  padding: 13px 29px;
+  font-family: "Rubik-Bold";
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  transition: 0.2s;
+}
+
+.to-main-btn:hover {
+  background-color: #6967A4;
+  color: #fff;
+}
+
+.login-container {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.login-container h1 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.login-container label {
+  font-family: "Monserrat-Bold";
+  margin-left: 3px;
+}
+
+.login-container input {
+  margin-top: 6px;
+  width: 350px;
+  height: 61px;
+  display: block;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0 16px;
+  font-family: "Monserrat-Bold";
+  box-shadow: 0 5px 5px #ccc;
+}
+
+.login-container input:focus {
+  outline: #7670ae;
+}
+
+.background img[alt="up-img"] {
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.background img[alt="down-img"] {
+  position: absolute;
+  top: 261px;
+  left: 0;
+}
+
+@media screen and (max-width: 840px) {
+
+  img[alt="up-img"], img[alt="down-img"] {
+    display: none;
+  }
+  
+}
+
+.new-user {
+  font-size: 14px;
+  text-align: center;
+}
+
+button.submit {
+  border: none;
+  width: 184px;
+  height: 40px;
+  background-color: #7670ae;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  font-family: "Monserrat-Bold";
+  text-transform: uppercase;
+  font-size: 12px;
+  transform: translate(44%);
+  margin-bottom: 11px;
+}
+
+.new-user a {
+  font-family: "Monserrat-Bold";
+  color: #090808;
+  text-decoration: none;
+}

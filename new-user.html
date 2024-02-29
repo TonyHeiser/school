@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="new-user.css" />
+    <title>Расписание</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <div class="main-head">
+          <a href="main.html" class="to-main">
+            <div class="header-top__logo">
+              <div class="logo-text">
+                <span class="uppercase">Creators</span>
+                <span class="school">school</span>
+              </div>
+              <img src="media/криэйторс 1.svg" alt="creators-logo" />
+            </div>
+          </a>
+          <button class="get-lesson">
+            <div class="plus">
+              <div class="plus__dash1"></div>
+              <div class="plus__dash2"></div>
+            </div>
+            <span>Записаться</span>
+          </button>
+        </div>
+        <div class="times">
+          <div class="times__time">
+            <span>09:00</span>
+            <div class="long-dash"></div>
+          </div>
+          <div class="times__time">
+            <span>10:00</span>
+            <div class="long-dash"></div>
+          </div>
+          <div class="times__time">
+            <span>11:00</span>
+            <div class="long-dash"></div>
+          </div>
+          <div class="times__time">
+            <span>12:00</span>
+            <div class="long-dash"></div>
+          </div>
+          <div class="times__time">
+            <span>13:00</span>
+            <div class="long-dash"></div>
+          </div>
+          <div class="times__time">
+            <span>14:00</span>
+            <div class="long-dash"></div>
+          </div>
+          <div class="times__time">
+            <span>15:00</span>
+            <div class="long-dash"></div>
+          </div>
+          <div class="times__time">
+            <span>16:00</span>
+            <div class="long-dash"></div>
+          </div>
+          <div class="times__time">
+            <span>17:00</span>
+            <div class="long-dash"></div>
+          </div>
+          <div class="times__time">
+            <span>18:00</span>
+            <div class="long-dash"></div>
+          </div>
+        </div>
+      </main>
+      <aside class="aside">
+        <div class="account">
+          <div class="account__info">
+            <img src="media/Group 1269.svg" alt="account-icon" />
+            <div class="account__text">
+              <span class="bold">Аккаунт</span>
+              <span>статус</span>
+            </div>
+          </div>
+          <button class="expand">
+            <img src="media/Expand.svg" alt="expand-icon" />
+          </button>
+        </div>
+        <div class="aside-exit">
+          <button class="aside-exit__btn" onclick="document.location='log-in.html'">
+            <img src="media/home-icon.svg" alt="home-icon" class="aside-exit__img">
+            <span class="aside-exit__text">Выйти из аккаунта</span>
+          </button>
+        </div>
+        <div class="calendar">
+          <div class="calendar__container">
+            <div class="calendar__header">
+              <button id="prev">
+                <img src="media/angle-left.svg" alt="left-icon" class="left" />
+              </button>
+              <p class="calendar__current-date"></p>
+              <button id="next">
+                <img src="media/angle-right.svg" alt="right-icon" class="right" />
+              </button>
+            </div>
+            <div class="calendar__body">
+              <ul class="weeks">
+                <li>ПН</li>
+                <li>ВТ</li>
+                <li>СР</li>
+                <li>ЧТ</li>
+                <li>ПТ</li>
+                <li>СБ</li>
+                <li>ВС</li>
+              </ul>
+              <ul class="days">
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="notes">
+          <h2>Заметки</h2>
+          <div class="notes__dash"></div>
+          <div class="notes__dash"></div>
+          <div class="notes__dash"></div>
+          <div class="notes__dash"></div>
+          <div class="notes__dash"></div>
+        </div>
+      </aside>
+    </div>
+    <section class="modal-open">
+      <div class="modal-open__content">
+        <h2 class="modal-open__title">
+          Добро пожаловать <br />
+          в школу “Creators”!
+        </h2>
+        <p class="modal-open__text">
+          Запишись на занятие уже сегодня! Заполните контактную информацию для
+          записи на урок.
+        </p>
+        <button class="modal-open__btn">OK!</button>
+      </div>
+    </section>
+    
+    <section class="modal-form">
+      <div class="modal-form__content">
+        <button class="close__modal-form">X</button>
+        <h3 class="modal-form__title">Запись на занятие</h3>
+        <form action="" class="modal-form__form">
+          <label for="first-name">Имя</label>
+          <input type="text" name="first-name" placeholder="Иван" required />
+          <label for="last-name">Фамилия</label>
+          <input type="text" name="last-name" placeholder="Иванов" required />
+          <label for="subject">Дисциплина</label>
+          <select name="subject" id="subject-select" required>
+            <option value="" class="subject-select__option">
+              Выберите из списка
+            </option>
+            <option value="">FrontEnd</option>
+            <option value="">UX Designer</option>
+            <option value="">C# Backend</option>
+            <option value="">Java Backend</option>
+            <option value="">Data scientist</option>
+          </select>
+          <label for="datetime">Дата и время</label>
+          <input
+            type="text"
+            name="datetime"
+            placeholder="Выберите из списка"
+            required
+          />
+          <label for="phone">Телефон</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+375 *******"
+            required
+          />
+          <button type="submit" class="submit-btn">Записаться</button>
+        </form>
+        <img src="media/Globe-books.svg" alt="modal-form__icon" class="modal-form__icon">
+      </div>
+    </section>
+    <script src="new-user.js"></script>
+  </body>
+</html>

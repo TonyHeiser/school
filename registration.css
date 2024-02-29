@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Monserrat-Bold";
+  src: url(font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Monserrat-ExtraBold";
+  src: url(font/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Monserrat-Regular";
+  src: url(font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Monserrat-Medium";
+  src: url(font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url(font/Rubik-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Monserrat-Regular", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #f1ebff;
+  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.to-main-btn {
+  margin: 20px 26px;
+  background: transparent;
+  border: 1px solid #6967A4;
+  color: #6967A4;
+  padding: 13px 29px;
+  font-family: "Rubik-Bold";
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  transition: 0.2s;
+}
+
+.to-main-btn:hover {
+  background-color: #6967A4;
+  color: #fff;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.container h1 {
+  font-family: "Monserrat-ExtraBold", Roboto;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 18px;
+}
+
+form.registration {
+  font-family: "Monserrat-Bold"
+}
+
+form.registration label {
+  margin-left: 3px;
+}
+
+form.registration input {
+  font-family: "Monserrat-Medium";
+  font-size: 16px;
+  margin-top: 4px;
+  width: 350px;
+  height: 61px;
+  display: block;
+  padding: 22px 16px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: -11px;
+  box-shadow: 0 5px 5px #ccc;
+}
+
+form.registration input:focus {
+  outline: none;
+}
+
+.e-mail {
+}
+.name {
+}
+.password {
+}
+
+.btn-submit {
+  margin-top: 12px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #7670AE;
+  color: white;
+  width: 184px;
+  height: 40px;
+  border-radius: 7px;
+  font-family: "Monserrat-Bold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  transform: translate(44%);
+}
+
+.already-have {
+  margin-top: 19px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.already-have a {
+  font-family: "Monserrat-Bold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #090808;
+  text-decoration: none;
+}
+
+.background {
+}
+
+.background img[alt="up-img"] {
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.background img[alt="down-img"] {
+  position: absolute;
+  top: 261px;
+  left: 0;
+}
+
+@media screen and (max-width: 840px) {
+
+  img[alt="up-img"], img[alt="down-img"] {
+    display: none;
+  }
+  
+}
