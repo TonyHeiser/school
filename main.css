@@ -250,6 +250,9 @@ a.link-to-formdata:hover {
     margin-bottom: 50px;
     border: 2px solid var(--clrprimary1);
   }
+  .header-main__title {
+    font-size: 30px;
+  }
 }
 
 /* about */
